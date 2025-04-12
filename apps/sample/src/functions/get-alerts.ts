@@ -1,10 +1,10 @@
+import type { ToolCallback } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import {
   type AlertResponse,
   formatAlert,
   makeNWSRequest,
 } from "../api/client.js";
-import type { ToolCallback } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 export const getAlertsInput = {
   state: z.string().length(2).describe("Two-letter state code (e.g. CA, NY)"),
