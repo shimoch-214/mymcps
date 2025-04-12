@@ -1,0 +1,22 @@
+{
+  "name": "shimomo-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "22.14.0",
+    "pnpm": "8.15.4"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "biome lint .",
+    "format": "biome format .",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "turbo": "2.5.0",
+    "typescript": "5.8.3"
+  }
+}
